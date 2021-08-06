@@ -34,10 +34,7 @@ def stop():
     sys.exit(0)
 
 kontaktliste = {
-    'paul' : '1754517455',
-    'schwester' : '15751027296',
-    'mama' : '15734901747',
-    'robin' : '15730706685'
+    #Kontakte
 }
 
 stundenanzahl = {
@@ -133,8 +130,9 @@ minutenanzahl = {
 }
 
 def nachricht_sender():
-    if os.path.exists("C:/Users/Juri Zockt/Documents/Codes/pywhatkit_dbs.txt"):
-        os.remove("C:/Users/Juri Zockt/Documents/Codes/pywhatkit_dbs.txt")
+    #Das die .txt File gelöscht wird
+    if os.path.exists("/pywhatkit_dbs.txt"):
+        os.remove("/pywhatkit_dbs.txt")
     print('Hi, hast du Whatsapp schon mit Whatsapp Web verbunden, wenn nicht sag bei der nächsten Frage: Stopp')
     rede('Hi, hast du Whatsapp schon mit Whatsapp Web verbunden, wenn nicht sag bei der nächsten Frage: Stopp')
     time.sleep(1)
@@ -165,8 +163,9 @@ def nachricht_sender():
     time.sleep(1)
     print('Fertig!')
     time.sleep(1)
-    if os.path.exists("C:/Users/Juri Zockt/Documents/Codes/pywhatkit_dbs.txt"):
-        os.remove("C:/Users/Juri Zockt/Documents/Codes/pywhatkit_dbs.txt")
+    #Das die .txt File gelöscht wird
+    if os.path.exists("/pywhatkit_dbs.txt"):
+        os.remove("/pywhatkit_dbs.txt")
     sys.exit(0)
 
 nachricht_sender()
