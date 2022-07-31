@@ -131,8 +131,9 @@ minutenanzahl = {
 
 def nachricht_sender():
     #Das die .txt File gelöscht wird
-    if os.path.exists("/pywhatkit_dbs.txt"):
-        os.remove("/pywhatkit_dbs.txt")
+    if os.path.exists("pywhatkit_dbs.txt"):
+        os.remove("pywhatkit_dbs.txt")
+    print('Script Made by Juri Zockt')
     print('Hi, hast du Whatsapp schon mit Whatsapp Web verbunden, wenn nicht sag bei der nächsten Frage: Stopp')
     rede('Hi, hast du Whatsapp schon mit Whatsapp Web verbunden, wenn nicht sag bei der nächsten Frage: Stopp')
     time.sleep(1)
@@ -164,8 +165,8 @@ def nachricht_sender():
     print('Fertig!')
     time.sleep(1)
     #Das die .txt File gelöscht wird
-    if os.path.exists("/pywhatkit_dbs.txt"):
-        os.remove("/pywhatkit_dbs.txt")
+    if os.path.exists("pywhatkit_dbs.txt"):
+        os.remove("pywhatkit_dbs.txt")
     sys.exit(0)
 
 nachricht_sender()
